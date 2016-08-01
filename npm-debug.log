@@ -1,0 +1,61 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', 'mdi' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /var/www/html/cgma/taller/front-end/cv/package.json
+5 verbose readDependencies loading dependencies from /var/www/html/cgma/taller/front-end/cv/package.json
+6 silly cache add args [ 'mdi', null ]
+7 verbose cache add spec mdi
+8 silly cache add parsed spec Result {
+8 silly cache add   raw: 'mdi',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'mdi',
+8 silly cache add   rawSpec: '',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed mdi@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for mdi
+11 info addNameTag [ 'mdi', 'latest' ]
+12 silly mapToRegistry name mdi
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry data Result {
+15 silly mapToRegistry   raw: 'mdi',
+15 silly mapToRegistry   scope: null,
+15 silly mapToRegistry   name: 'mdi',
+15 silly mapToRegistry   rawSpec: '',
+15 silly mapToRegistry   spec: 'latest',
+15 silly mapToRegistry   type: 'tag' }
+16 silly mapToRegistry uri https://registry.npmjs.org/mdi
+17 verbose addNameTag registry:https://registry.npmjs.org/mdi not in flight; fetching
+18 verbose request uri https://registry.npmjs.org/mdi
+19 verbose request no auth needed
+20 info attempt registry request try #1 at 15:43:53
+21 verbose request id 02c74c70ef883611
+22 http request GET https://registry.npmjs.org/mdi
+23 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.48.162:443
+24 info attempt registry request try #2 at 15:46:10
+25 http request GET https://registry.npmjs.org/mdi
+26 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 151.101.48.162:443
+27 info attempt registry request try #3 at 15:49:18
+28 http request GET https://registry.npmjs.org/mdi
+29 verbose stack Error: connect ETIMEDOUT 151.101.48.162:443
+29 verbose stack     at Object.exports._errnoException (util.js:870:11)
+29 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+29 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1061:14)
+30 verbose cwd /var/www/html/cgma/taller/front-end/cv
+31 error Linux 3.19.0-32-generic
+32 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "mdi"
+33 error node v4.4.5
+34 error npm  v2.15.5
+35 error code ETIMEDOUT
+36 error errno ETIMEDOUT
+37 error syscall connect
+38 error network connect ETIMEDOUT 151.101.48.162:443
+38 error network This is most likely not a problem with npm itself
+38 error network and is related to network connectivity.
+38 error network In most cases you are behind a proxy or have bad network settings.
+38 error network
+38 error network If you are behind a proxy, please make sure that the
+38 error network 'proxy' config is set properly.  See: 'npm help config'
+39 verbose exit [ 1, true ]
